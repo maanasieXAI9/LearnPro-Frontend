@@ -1,0 +1,44 @@
+.loading-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(11, 29, 58, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.bouncing-loader {
+  display: flex;
+  gap: 10px;
+}
+
+.bouncing-loader > div {
+  width: 18px;
+  height: 18px;
+  background-color: #4da6ff;
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+/* Animate each ball with a slight delay */
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-15px);
+    opacity: 0.7;
+  }
+}

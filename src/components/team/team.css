@@ -1,0 +1,65 @@
+.team-section {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #e3f2fd, #fef9e7);
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #0d47a1;
+}
+
+/* Scrollable horizontal layout with padding to show first card properly */
+.team-cards {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px 20px 20px 40px;
+  scroll-behavior: smooth;
+  scroll-padding-left: 40px;
+}
+
+/* Optional: Hide scrollbars for a cleaner look */
+.team-cards::-webkit-scrollbar {
+  display: none;
+}
+.team-cards {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+
+/* Team member card styles */
+.team-card {
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Square image style */
+.team-card img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Name */
+.team-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #1a237e;
+}
+
+/* Role or Description */
+.team-card p {
+  font-size: 0.95rem;
+  color: #555;
+}

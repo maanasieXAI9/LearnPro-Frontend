@@ -1,0 +1,98 @@
+.new-section {
+  position: relative;
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.05); /* Transparent glass */
+  border-radius: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #FAFAFA; /* Off-white */
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.06); /* more transparent */
+  backdrop-filter: blur(15px); /* increased blur */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  padding: 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, background 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.15); /* subtle border for depth */
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08); /* slightly brighter on hover */
+}
+
+.icon-wrapper {
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fbf5f5; /* Off red/dark maroon */
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #f0dede;
+}
+
+.career-highlight {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 5px solid #b91c1c; /* Deep red */
+  font-size: 1.1rem;
+  color: #ffeaea;
+  border-radius: 1rem;
+}
+
+/* Optional background shapes if used */
+.background-shapes .shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.shape-1 {
+  width: 150px;
+  height: 150px;
+  background: #7f1d1d; /* Maroonish red */
+  top: -40px;
+  left: -40px;
+}
+
+.shape-2 {
+  width: 100px;
+  height: 100px;
+  background: #991b1b;
+  bottom: -20px;
+  right: 30px;
+}
+
+.shape-3 {
+  width: 80px;
+  height: 80px;
+  background: #dc2626;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}

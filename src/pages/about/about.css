@@ -1,0 +1,102 @@
+.about-intro {
+  font-size: 1.2rem;
+  margin: 1rem auto 2rem auto;
+  max-width: 700px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white; /* cursor effect */
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+
+.about-page {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ✅ Full-screen background video */
+.about-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* ✅ Dark overlay for readability */
+.about-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* ✅ Content goes above video + overlay */
+.about-container {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: white;
+}
+
+/* Optional glassmorphism */
+.glass-merged {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Ensure Team section is not overlapped */
+.about-page > .team-section,
+.about-page > :last-child {
+  position: relative;
+  z-index: 1;
+}
+
+.about-body h3 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #f0f0f0;
+}
+
+.about-offers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.offer-item {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 1.2rem 1.5rem;
+  width: 250px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.offer-item:hover {
+  transform: translateY(-5px);
+}
+
+

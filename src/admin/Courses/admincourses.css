@@ -1,0 +1,102 @@
+.admin-courses {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  background: #0e0e0e; /* Dark background */
+
+  .left {
+    flex: 2;
+
+    .dashboard-content {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 40px;
+      margin-left: 5px;
+    }
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .course-form {
+      background-color: #1a1a1a; /* Dark card */
+      padding: 35px 30px;
+      border-radius: 15px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      width: 320px;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 16px 32px rgba(138, 75, 175, 0.4);
+        transform: translateY(-5px);
+      }
+
+      h2 {
+        font-size: 26px;
+        color: #c490f8;
+        margin-bottom: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      form {
+        text-align: left;
+
+        label {
+          display: block;
+          margin-bottom: 8px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #e0d3f5;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+
+        input,
+        select {
+          width: 100%;
+          padding: 12px 14px;
+          margin-bottom: 18px;
+          border: 1.8px solid #6e3e97;
+          border-radius: 8px;
+          font-size: 15px;
+          color: #f3eaff;
+          background: #2a2a2a;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+          &:focus {
+            border-color: #c490f8;
+            box-shadow: 0 0 8px rgba(196, 144, 248, 0.4);
+            outline: none;
+            background: #1f1f1f;
+          }
+        }
+
+        button {
+          width: 100%;
+          padding: 12px;
+          background-color: #8a4baf;
+          color: #fff;
+          font-weight: 700;
+          font-size: 16px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #6f3a92;
+          }
+        }
+      }
+    }
+  }
+}
